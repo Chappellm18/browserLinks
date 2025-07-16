@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Configure Links</title>
+  <link href="./output.css" rel="stylesheet">  </head>
+  <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-md">
+      <h1 class="text-xl font-semibold text-gray-800 text-center mb-6">
+        Configure Profile URLs
+      </h1>
+
+      <div class="mb-4">
+        <label for="linkedinUrl" class="block mb-2 text-sm font-medium text-gray-700">LinkedIn URL</label>
+        <input type="text" id="linkedinUrl" placeholder="https://www.linkedin.com/in/your-profile"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+      </div>
+
+      <div class="mb-6">
+        <label for="githubUrl" class="block mb-2 text-sm font-medium text-gray-700">GitHub URL</label>
+        <input type="text" id="githubUrl" placeholder="https://github.com/your-username"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+      </div>
+
+      <button id="save"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition focus:ring-4 focus:ring-blue-300">
+        Save URLs
+      </button>
+
+      <p id="statusMessage" class="mt-4 text-center text-green-600 font-medium hidden">
+        Saved!
+      </p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
